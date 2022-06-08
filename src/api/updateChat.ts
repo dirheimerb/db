@@ -1,6 +1,7 @@
 import axios from 'axios';
 import fs from 'fs';
-
+import 'dotenv/config'
+const apiKey = process.env.API_KEY
 const data = JSON.stringify({
 	users: {
 		user: {
@@ -24,7 +25,7 @@ const config = {
 	method: 'PUT',
 	url: 'https://api.jsonstorage.net/v1/json/45688467-5bcf-47d8-856a-30c88f11d668/98a6aa63-1284-415e-9098-b6f46603a56c?apiKey=f5332669-c121-4e21-a148-77df0aaaed84',
 	headers: {
-		Authorization: 'Bearer f5332669-c121-4e21-a148-77df0aaaed84',
+		Authorization: `Bearer ${apiKey}`,
 		'Content-Type': 'application/json',
 	},
 	data: data,

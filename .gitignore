@@ -4,3 +4,4 @@ package-lock.json
 .tsbuildinfo
 .npmignore
 .prettierrc
+.env
