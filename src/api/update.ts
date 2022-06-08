@@ -1,7 +1,7 @@
 import axios from 'axios';
 import fs from 'fs';
-import 'dotenv/config'
-const apiKey = process.env.API_KEY
+import 'dotenv/config';
+const apiKey = process.env.API_KEY;
 const data = JSON.stringify({
 	users: {
 		user: {
